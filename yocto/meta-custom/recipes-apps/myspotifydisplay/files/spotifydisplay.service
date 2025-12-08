@@ -1,0 +1,11 @@
+[Unit]
+Description=Spotify Display Application
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/spotifydisplay
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

@@ -31,20 +31,15 @@ that:
   - SSH client to manage the device over the network
 
 ## Prerequisites
+- A working Yocto/Poky (kirkstone) setup to build an image for the Raspberry Pi 4.
+- rfidSpotifyPlayer running on another machine / Pi on the same network: https://github.com/danishtran/rfidSpotifyPlayer
+- That project should use the /state endpoint (Flask server) which returns current Spotify playback state.
+
+**Required Yocto layers**
 - poky (meta, meta-poky, meta-yocto-bsp)
 - meta-openembedded
 - meta-raspberrypi
 - This repo’s meta-custom
-
-A working Yocto/Poky setup to build an image for the Raspberry Pi 4.
-
-rfidSpotifyPlayer running on another machine / Pi on the same network:
-https://github.com/danishtran/rfidSpotifyPlayer
-
-That project should use the /state endpoint (Flask server) which returns current Spotify playback state.
-
-**Required Yocto layers**
-
 
 ## Repo Layout
 ```
